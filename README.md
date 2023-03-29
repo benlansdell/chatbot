@@ -9,7 +9,7 @@ Just install requirements
 pip install -r requirements.txt
 ```
 
-Then spin up a server with 
+Then spin up a Flask server with 
 ```
 make deploy
 ```
