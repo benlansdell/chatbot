@@ -6,4 +6,4 @@
 
 cd "${0%/*}"
 
-FLASK_APP=src/app FLASK_ENV=development FLASK_RUN_PORT=8765 /home/blansdel/anaconda3/envs/slidesearch-comet/bin/flask run --host 0.0.0.0
+FLASK_APP=src/app FLASK_ENV=development FLASK_RUN_PORT=8765 flask run --host 0.0.0.0
