@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+Web app to view COMET slides (with some overlays added). Click on headers to sort by column. Available slides: <br><br>
+
+<table class="searchable sortable">
+    <thead>
+    <tr>
+    <th class="c1">SJID</th>
+    <th class="c2">Slide scan num.</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for each in available_images %}
+    <TR>
+    <TD class="c1"><a href="{{ url_for('slideview', sjid=each[1]) }}">{{ each[1] }}</a><br></TD>
+    <TD class="c2">{{ each[0].split('.')[0] }}</TD>
+    </TR>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
