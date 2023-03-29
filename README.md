@@ -13,3 +13,8 @@ Then spin up a Flask server with
 ```
 make deploy
 ```
+
+Then point your browser to
+```
+localhost:8765
+```
